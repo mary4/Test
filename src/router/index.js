@@ -1,11 +1,13 @@
 import { createWebHistory, createRouter } from 'vue-router'
-import JokeComponent from '../components/JokeComponent'
+// import JokeComponent from '../components/JokeComponent'
+
+
 
 const routes = [
     {
         path: "/main",
         name: "Joke",
-        component: JokeComponent,
+        component: () => import('../components/JokeComponent'),
     },
 ];
 
